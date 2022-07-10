@@ -1,0 +1,30 @@
+section.skillAdd{
+
+    .new-button {
+        &:hover {
+          background-color: $successColor;
+          cursor: pointer;
+        }
+        label{
+          cursor: pointer;
+          width: 100%;
+        }
+        display: inline-block;
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 4px;
+        background-color: $mainColor;
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+      }
+      input[type="file"] {
+        position: absolute;
+        z-index: -1;
+        font-size: 15px;
+        color: rgb(153, 153, 153);
+      }
+      .button-wrap {
+        position: relative;
+      }
+}

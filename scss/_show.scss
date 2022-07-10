@@ -1,0 +1,100 @@
+section.postHead {
+  
+  .details {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    .postTitle {
+      font-size: 6rem;
+      text-shadow: 3px 3px 5px #000;
+      padding-bottom: 15vh;
+      margin: 0 auto;
+    }
+    .projectDesc {
+      text-shadow: 3px 3px 5px #000;
+      margin: 10px 0;
+    }
+    .descFixed {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+  }
+  .projectLinks {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    width: 100%;
+    padding-top: 10px;
+    .website,
+    .github {
+      flex: 1 1 25%;
+      text-shadow: 3px 3px 5px #000;
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .cover {
+    padding: 20px;
+    min-width: 40vh;
+    max-width: 80vh;
+  }
+}
+
+section.postBody {
+  a {
+    color: $mainColor
+  }
+  div.container.flex.flex-colum {
+    background-color: $lightColor;
+    h1 {
+      font-size: 3rem;
+      font-weight: bolder;
+      padding: 5px;
+      align-self: flex-start;
+    }
+    h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      padding: 5px;
+      align-self: flex-start;
+    }
+    p {
+      font-size: 1.15rem;
+      font-weight: lighter;
+      padding: 5px 10px;
+    }
+    ol {
+      background-color: #fff;
+      border-radius: 6px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      list-style: decimal inside none;
+      li {
+        padding: 10px;
+      }
+    }
+    blockquote {
+      background-color: #333;
+      color: $lightColor;
+      border-radius: 10px;
+      margin: 25px;
+      padding: 10px;
+    }
+    strong {
+      color: darkorange;
+      font-weight: bold;
+    }
+    pre {
+      white-space: pre-wrap;
+      code.language-md {
+        display: flex;
+        flex-flow: column wrap;
+        border-radius: 5px;
+        border: 2px solid darkorange;
+        padding: 10px;
+        font-size: 1em;
+        width: 100%;
+      }
+    }    
+  }
+}

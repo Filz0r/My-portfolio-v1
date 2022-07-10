@@ -1,0 +1,17 @@
+<section class="editProj">
+    <div class="container">
+      <div class="card bg-dark flex editCard">
+        <h1 class="my-2 xxl text-center">Edit "<%= project.title  %>"</h1>
+        <% if (path === `/admin/en/projects/edit/${project.id}`) { %>
+          <form action="/admin/en/projects/edit/<%= project.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+            <%- include('../partials/_form_fields_projects') %>
+          </form>
+        <% } else if (path === `/admin/pt/projects/edit/${project.id}`) { %>
+          <form action="/admin/pt/projects/edit/<%= project.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+            <%- include('../partials/_form_fields_projects') %>
+          </form>
+        <% } %>
+      </div>
+    </div>
+  </section>
+  

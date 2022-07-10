@@ -1,0 +1,403 @@
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+  }
+  
+  .card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: $mainColor;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    border: 1px #fff solid;
+  }
+  
+  .btn:hover {
+    transform: scale(0.98);
+  }
+
+  .btn-group {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /*FORMS*/
+  .form-group{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  /* Toggle switch*/
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /* Backgrounds & colored buttons */
+  .bg-primary,
+  .btn-primary {
+    background-color: $mainColor;
+    color: #fff;
+  }
+  
+  .bg-secondary,
+  .btn-secondary {
+    background-color: $secondaryColor;
+    color: #fff;
+  }
+  
+  .bg-dark,
+  .btn-dark {
+    background-color: $darkColor;
+    color: #fff;
+  }
+  
+  .bg-light,
+  .btn-light {
+    background-color: $lightColor;
+    color: #333;
+  }
+
+  .btn-success {
+    background-color: $successColor;
+    color: #fff;
+  }
+  .btn-error {
+    background-color: $errorColor;
+    color: #fff;
+  }
+  
+  .bg-primary,
+  .btn-primary a,
+  .bg-secondary a,
+  .btn-secondary a,
+  .bg-dark a,
+  .btn-dark a {
+    color: #fff;
+  }
+  
+  /* Text colors */
+  .text-primary {
+    color: $mainColor;
+  }
+  
+  .text-secondary {
+    color: $secondaryColor;
+  }
+  
+  .text-dark {
+    color: $darkColor;
+  }
+  
+  .text-light {
+    color: $lightColor;
+  }
+  
+  /* Text sizes */
+  .lead {
+    font-size: 20px;
+  }
+  
+  .sm{
+    font-size: 0.75rem;
+  }
+  .nm {
+    font-size: 1rem;
+  }
+  
+  .md {
+    font-size: 1.25rem;
+  }
+  
+  .lg {
+    font-size: 1.5rem;
+  }
+  
+  .xl {
+    font-size: 1.75rem;
+  }
+
+  .xxl{
+    font-size: 2rem;
+  }
+  /* text transforms */
+  .text-italic {
+    font-style: italic;
+  }
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Alert */
+  .alert {
+    background-color: $lightColor;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px 0;
+  }
+  
+  .alert i {
+    margin-right: 10px;
+  }
+  
+  .alert-success {
+    background-color: $successColor;
+    color: #fff;
+  }
+  
+  .alert-error {
+    background-color: $errorColor;
+    color: #fff;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .flex-colum {
+    flex-direction: column;
+  }
+
+  .flex-end {
+    align-items: flex-end;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Margin */
+  .my-1 {
+    margin: 1rem 0;
+  }
+  
+  .my-2 {
+    margin: 1.5rem 0;
+  }
+  
+  .my-3 {
+    margin: 2rem 0;
+  }
+  
+  .my-4 {
+    margin: 3rem 0;
+  }
+  
+  .my-5 {
+    margin: 4rem 0;
+  }
+
+  .mb-1 {
+    margin: 0 0 0.75rem 0;
+  }
+
+  .mb-2 {
+    margin: 0 0 1rem 0;
+  }
+
+  .mb-3 {
+    margin: 0 0 1.25rem 0;
+  }
+
+  .mb-4 {
+    margin: 0 0 1.5rem 0;
+  }
+
+  .mb-5 {
+    margin: 0 0 1.75rem 0;
+  }
+
+  .mt-1 {
+    margin: 0.75rem 0 0 0;
+  }
+
+  .mt-2 {
+    margin: 1rem 0 0 0;
+  }
+
+  .mt-3 {
+    margin: 1.25rem 0 0 0;
+  }
+
+  .mt-4 {
+    margin: 1.5rem 0 0 0;
+  }
+
+  .mt-5 {
+    margin: 1.75rem 0 0 0;
+  }
+
+  .m-1 {
+    margin: 1rem;
+  }
+    
+  .m-2 {
+    margin: 1.5rem;
+  }
+  
+  .m-3 {
+    margin: 2rem;
+  }
+  
+  .m-4 {
+    margin: 3rem;
+  }
+  
+  .m-5 {
+    margin: 4rem;
+  }
+  
+  /* Padding */
+  .py-1 {
+    padding: 1rem 0;
+  }
+  
+  .py-2 {
+    padding: 1.5rem 0;
+  }
+  
+  .py-3 {
+    padding: 2rem 0;
+  }
+  
+  .py-4 {
+    padding: 3rem 0;
+  }
+  
+  .py-5 {
+    padding: 4rem 0;
+  }
+  
+  .p-1 {
+    padding: 1rem;
+  }
+  
+  .p-2 {
+    padding: 1.5rem;
+  }
+  
+  .p-3 {
+    padding: 2rem;
+  }
+  
+  .p-4 {
+    padding: 3rem;
+  }
+  
+  .p-5 {
+    padding: 4rem;
+  }
+
+  .pb-1 {
+    padding: 0 0 1rem;
+  }
+  
+  .pb-2 {
+    padding: 0 0 1.5rem;
+  }
+  
+  .pb-3 {
+    padding: 0 0 2rem;
+  }
+  
+  .pb-4 {
+    padding: 0 0 3rem;
+  }
+  
+  .pb-5 {
+    padding: 0 0 4rem;
+  }
+
+  /* floats */
+  .float-left {
+      float: left;
+  }
+  .float-right {
+      float: right;
+  }

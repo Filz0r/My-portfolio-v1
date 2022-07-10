@@ -1,0 +1,134 @@
+<section class="backoffice bg-light">
+  <div class="menu">
+    <a href="/admin/en/projects/new" class="btn btn-secondary"
+    >New Project</a
+  >
+  <a href="/admin/en/projects/" class="btn btn-secondary"
+    >All Projects</a
+  >
+  <a href="/admin/skills/" class="btn btn-secondary"
+    >New Skills</a
+  >
+    <a href="/admin/pt/projects/new" class="btn btn-secondary"
+    >New Project - PT</a
+  >
+  <a href="/admin/pt/projects/" class="btn btn-secondary"
+    >All Projects - PT</a
+  >
+  <a href="/admin/pt/" class="btn btn-secondary">Edit PT</a>
+  <a href="/admin/account/" class="btn btn-secondary">Edit Account</a>
+  </div>
+  </div>
+
+  <div class="container">
+    <% if (path === '/admin/en/') { %> 
+    <form action="/admin/en" method="post">
+      <div class="card bg-dark flex flex-colum bg">
+        <div class="card bg-dark flex flex-colum form">
+          <div class="form-group">
+            <div class="form-group">
+              <label for="description">Description</label>
+              <textarea
+                name="description"
+                id="description"
+                class="form-control"
+                cols="30"
+                rows="5"
+                placeholder="Enter the post description"
+              ><%= about.description %></textarea>
+            </div>
+            <div class="form-group">
+              <label for="about">About</label>
+              <textarea
+                name="about"
+                id="about"
+                class="form-control"
+                cols="30"
+                rows="5"
+                placeholder="Enter the about section in markdown"
+              ><%= about.about %></textarea>
+            </div>
+            <div class="form-group">
+                <label for="skills">Skills</label>
+                <textarea
+                  name="skills"
+                  id="skills"
+                  class="form-control"
+                  cols="20"
+                  rows="5"
+                  placeholder="Enter the skills section in markdown"
+                ><%= about.skills %></textarea>
+              </div>
+            <div class="form-group skills">
+              <% skills.forEach(skill => { %>
+                <div class="flex flex-colum">
+                  <label  for="skill"><%= skill.name.toUpperCase() %> </label>
+                  <label  class="switch">
+                    <input type="checkbox" name="skill" id="skill" value="<%= skill.name %>" <%= about.skillBag.includes(skill.name) ? 'checked' : '' %> >
+                    <span class="slider round"></span>
+                  </label>
+              </div>
+              <% }) %>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-success">Save!</button>
+            </div>
+        </div>
+      </div>
+    </form>
+  <% } else if (path === '/admin/pt/') { %>
+    <form action="/admin/pt" method="post">
+      <div class="card bg-dark bg">
+        <div class="card bg-dark form">
+          <div class="form-group">
+            <div class="form-group">
+              <label for="description">Description</label>
+              <textarea
+                name="description"
+                id="description"
+                class="form-control"
+                cols="30"
+                rows="5"
+                placeholder="Enter the post description"
+              ><%= about.description %></textarea>
+            </div>
+            <div class="form-group">
+              <label for="about">About</label>
+              <textarea
+                name="about"
+                id="about"
+                class="form-control"
+                cols="30"
+                rows="5"
+                placeholder="Enter the about section in markdown"
+              ><%= about.about %></textarea>
+            </div>
+            <div class="form-group">
+                <label for="skills">Skills</label>
+                <textarea
+                  name="skills"
+                  id="skills"
+                  class="form-control"
+                  cols="20"
+                  rows="5"
+                  placeholder="Enter the skills section in markdown"
+                ><%= about.skills %></textarea>
+              </div>
+            <div class="form-group skills">
+              <% skills.forEach(skill => { %>
+                <div class="flex flex-colum">
+                  <label  for="skill"><%= skill.name.toUpperCase() %> </label>
+                  <label  class="switch">
+                    <input type="checkbox" name="skill" id="skill" value="<%= skill.name %>" <%= about.skillBag.includes(skill.name) ? 'checked' : '' %> >
+                    <span class="slider round"></span>
+                  </label>
+              </div>
+              <% }) %>
+            </div>
+            <button type="submit" class="btn btn-success">Save!</button>
+        </div>
+      </div>
+    </form>
+  <% } %>
+  </div>
+</section>

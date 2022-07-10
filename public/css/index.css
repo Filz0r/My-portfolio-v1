@@ -1,0 +1,1148 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: #047aed;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px #fff solid;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*FORMS*/
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+/* Toggle switch*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Backgrounds & colored buttons */
+.bg-primary,
+.btn-primary {
+  background-color: #047aed;
+  color: #fff;
+}
+
+.bg-secondary,
+.btn-secondary {
+  background-color: #1c3fa8;
+  color: #fff;
+}
+
+.bg-dark,
+.btn-dark {
+  background-color: #002240;
+  color: #fff;
+}
+
+.bg-light,
+.btn-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.btn-success {
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+.btn-error {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+.bg-primary,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+  color: #fff;
+}
+
+/* Text colors */
+.text-primary {
+  color: #047aed;
+}
+
+.text-secondary {
+  color: #1c3fa8;
+}
+
+.text-dark {
+  color: #002240;
+}
+
+.text-light {
+  color: #f4f4f4;
+}
+
+/* Text sizes */
+.lead {
+  font-size: 20px;
+}
+
+.sm {
+  font-size: 0.75rem;
+}
+
+.nm {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 1.25rem;
+}
+
+.lg {
+  font-size: 1.5rem;
+}
+
+.xl {
+  font-size: 1.75rem;
+}
+
+.xxl {
+  font-size: 2rem;
+}
+
+/* text transforms */
+.text-italic {
+  font-style: italic;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Alert */
+.alert {
+  background-color: #f4f4f4;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.alert i {
+  margin-right: 10px;
+}
+
+.alert-success {
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+.alert-error {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.flex-colum {
+  flex-direction: column;
+}
+
+.flex-end {
+  align-items: flex-end;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Margin */
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 1.5rem 0;
+}
+
+.my-3 {
+  margin: 2rem 0;
+}
+
+.my-4 {
+  margin: 3rem 0;
+}
+
+.my-5 {
+  margin: 4rem 0;
+}
+
+.mb-1 {
+  margin: 0 0 0.75rem 0;
+}
+
+.mb-2 {
+  margin: 0 0 1rem 0;
+}
+
+.mb-3 {
+  margin: 0 0 1.25rem 0;
+}
+
+.mb-4 {
+  margin: 0 0 1.5rem 0;
+}
+
+.mb-5 {
+  margin: 0 0 1.75rem 0;
+}
+
+.mt-1 {
+  margin: 0.75rem 0 0 0;
+}
+
+.mt-2 {
+  margin: 1rem 0 0 0;
+}
+
+.mt-3 {
+  margin: 1.25rem 0 0 0;
+}
+
+.mt-4 {
+  margin: 1.5rem 0 0 0;
+}
+
+.mt-5 {
+  margin: 1.75rem 0 0 0;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 1.5rem;
+}
+
+.m-3 {
+  margin: 2rem;
+}
+
+.m-4 {
+  margin: 3rem;
+}
+
+.m-5 {
+  margin: 4rem;
+}
+
+/* Padding */
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 1.5rem 0;
+}
+
+.py-3 {
+  padding: 2rem 0;
+}
+
+.py-4 {
+  padding: 3rem 0;
+}
+
+.py-5 {
+  padding: 4rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 3rem;
+}
+
+.p-5 {
+  padding: 4rem;
+}
+
+.pb-1 {
+  padding: 0 0 1rem;
+}
+
+.pb-2 {
+  padding: 0 0 1.5rem;
+}
+
+.pb-3 {
+  padding: 0 0 2rem;
+}
+
+.pb-4 {
+  padding: 0 0 3rem;
+}
+
+.pb-5 {
+  padding: 0 0 4rem;
+}
+
+/* floats */
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  display: block;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #002240;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+section.content {
+  background-color: #fff;
+}
+
+strong {
+  font-weight: bolder;
+}
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #047aed;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #002240;
+  /* Add a dark-grey background on hover */
+}
+
+section.error {
+  height: 600px;
+  max-height: 700px;
+  min-height: 400px;
+  padding: 20px 0;
+}
+section.error div.card.bg-light {
+  padding: 20px 50px;
+  font-size: 20px;
+}
+section.error div.card.bg-light h1 {
+  font-size: 50px;
+  padding: 30px 0;
+  text-align: center;
+  width: 100%;
+}
+section.error div.card.bg-light a {
+  color: #047aed;
+  text-align: center;
+}
+section.error div.card.bg-light a:hover {
+  color: #5cb85c;
+}
+section.error div.card.bg-light h2,
+section.error div.card.bg-light p {
+  text-align: center;
+}
+
+.navbar {
+  background-color: #047aed;
+  color: #fff;
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+.navbar a:active {
+  border-bottom: 2px #fff solid;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 2.5rem;
+}
+
+.menu label,
+input[type=checkbox] {
+  display: none;
+}
+
+.footer .social a {
+  margin: 0 10px;
+}
+
+.footer .grid {
+  align-items: initial;
+}
+
+section.about {
+  /*.homeImg {
+    max-width: 500px;
+    min-width: 360px;
+  }*/
+}
+section.about .section-title {
+  font-size: 4rem;
+  text-shadow: 3px 3px 5px #000;
+  padding: 10px;
+  margin: 20px;
+}
+section.about .description {
+  text-align: justify;
+  text-shadow: 2px 2px 4px #000;
+  font-size: 16px;
+  padding: 10px;
+  margin: 20px;
+}
+section.about .description a {
+  text-shadow: none;
+}
+
+section.more {
+  min-height: 500px;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+section.more .moreAbout {
+  width: 100%;
+}
+section.more .moreAbout .description {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+section.more .moreAbout .description .contacts {
+  padding: 10px;
+  margin: 10px 0;
+}
+section.more .moreAbout .description .contacts .cv a,
+section.more .moreAbout .description .contacts .cv i,
+section.more .moreAbout .description .contacts #about-mail a,
+section.more .moreAbout .description .contacts #about-mail i {
+  padding: 0 5px;
+  font-size: 1.5rem;
+}
+section.more .moreAbout .description .contacts .cv a:hover,
+section.more .moreAbout .description .contacts .cv i:hover,
+section.more .moreAbout .description .contacts #about-mail a:hover,
+section.more .moreAbout .description .contacts #about-mail i:hover {
+  color: #5cb85c;
+}
+section.more .moreAbout .description h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 10px 0;
+}
+section.more .moreAbout .description p {
+  text-align: justify;
+}
+section.more .moreAbout .aNewMessApears {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  min-height: 200px;
+  max-height: 750px;
+}
+section.more .moreAbout .aNewMessApears .card {
+  margin: 0;
+  background-color: #1c3fa8;
+  align-self: stretch;
+  cursor: pointer;
+  display: none;
+  margin: 20px 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+section.more .moreAbout .aNewMessApears .card:hover, section.more .moreAbout .aNewMessApears .card:active {
+  transform: scale(0.98);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+}
+section.more .moreAbout .aNewMessApears .card p {
+  text-align: justify;
+  color: cornsilk;
+}
+
+section.skills {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+section.skills h1 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 0 20px;
+  margin: 10px;
+}
+section.skills p {
+  text-align: justify;
+}
+section.skills .skill-bag {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+section.skills .skillBag {
+  align-items: space-evenly;
+  flex-wrap: wrap;
+}
+section.skills .skillBag .skillImg {
+  padding: 20px;
+  min-width: 50px;
+  max-width: 100px;
+}
+
+.card.loginCard {
+  background-color: #002240;
+  color: #fff;
+}
+.card.loginCard .form-control {
+  display: flex;
+  flex-direction: column;
+}
+.card.loginCard .form-control label {
+  float: left;
+}
+.card.loginCard .form-control input[type=email],
+.card.loginCard .form-control input[type=password] {
+  color: #fff;
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+  background-color: #002240;
+}
+.card.loginCard .form-control input[type=email]:focus,
+.card.loginCard .form-control input[type=password]:focus {
+  outline: none;
+}
+.card.loginCard .btn:hover {
+  background-color: #5cb85c;
+}
+
+section.projects div.card.bg-light {
+  padding: 0 20px 20px 20px;
+}
+section.projects div.card.bg-light:active, section.projects div.card.bg-light:hover {
+  transform: scale(0.99);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.562);
+}
+section.projects div.card.bg-light a {
+  color: #002240;
+}
+section.projects .card-title {
+  padding: 5px 0;
+  font-size: 3rem;
+}
+section.projects .card-text {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+section.projects .cover {
+  max-height: 360px;
+  max-width: 640px;
+}
+
+section.postHead .details {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+section.postHead .details .postTitle {
+  font-size: 6rem;
+  text-shadow: 3px 3px 5px #000;
+  padding-bottom: 15vh;
+  margin: 0 auto;
+}
+section.postHead .details .projectDesc {
+  text-shadow: 3px 3px 5px #000;
+  margin: 10px 0;
+}
+section.postHead .details .descFixed {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+section.postHead .projectLinks {
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  width: 100%;
+  padding-top: 10px;
+}
+section.postHead .projectLinks .website,
+section.postHead .projectLinks .github {
+  flex: 1 1 25%;
+  text-shadow: 3px 3px 5px #000;
+}
+section.postHead .projectLinks .website a:hover,
+section.postHead .projectLinks .github a:hover {
+  text-decoration: underline;
+}
+section.postHead .cover {
+  padding: 20px;
+  min-width: 40vh;
+  max-width: 80vh;
+}
+
+section.postBody a {
+  color: #047aed;
+}
+section.postBody div.container.flex.flex-colum {
+  background-color: #f4f4f4;
+}
+section.postBody div.container.flex.flex-colum h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  padding: 5px;
+  align-self: flex-start;
+}
+section.postBody div.container.flex.flex-colum h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 5px;
+  align-self: flex-start;
+}
+section.postBody div.container.flex.flex-colum p {
+  font-size: 1.15rem;
+  font-weight: lighter;
+  padding: 5px 10px;
+}
+section.postBody div.container.flex.flex-colum ol {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  list-style: decimal inside none;
+}
+section.postBody div.container.flex.flex-colum ol li {
+  padding: 10px;
+}
+section.postBody div.container.flex.flex-colum blockquote {
+  background-color: #333;
+  color: #f4f4f4;
+  border-radius: 10px;
+  margin: 25px;
+  padding: 10px;
+}
+section.postBody div.container.flex.flex-colum strong {
+  color: darkorange;
+  font-weight: bold;
+}
+section.postBody div.container.flex.flex-colum pre {
+  white-space: pre-wrap;
+}
+section.postBody div.container.flex.flex-colum pre code.language-md {
+  display: flex;
+  flex-flow: column wrap;
+  border-radius: 5px;
+  border: 2px solid darkorange;
+  padding: 10px;
+  font-size: 1em;
+  width: 100%;
+}
+
+section.backoffice {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+section.backoffice .menu {
+  align-self: center;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #047aed;
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+}
+section.backoffice .menu a:hover {
+  background-color: #5cb85c;
+}
+section.backoffice .card.form {
+  width: 100%;
+}
+section.backoffice .card.buttons,
+section.backoffice .card.form {
+  box-shadow: none;
+}
+section.backoffice .form-group {
+  width: 100%;
+}
+section.backoffice .form-group label {
+  float: left;
+  font-size: 25px;
+  font-weight: normal;
+}
+section.backoffice .form-group.skills {
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+section.backoffice .form-group.skills * {
+  padding: 10px;
+}
+section.backoffice textarea.form-control {
+  color: #fff;
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  border-radius: 5px;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+  background-color: #002240;
+}
+section.backoffice textarea.form-control:focus {
+  outline: none;
+}
+
+section.newProj form,
+section.newProj h1 {
+  width: 100%;
+}
+section.newProj .newCard {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+section.newProj .form-control {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+section.newProj .form-control label {
+  float: left;
+}
+section.newProj input[type=text].form-control,
+section.newProj textarea.form-control {
+  color: #fff;
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+  background-color: #002240;
+}
+section.newProj input[type=text].form-control:focus,
+section.newProj textarea.form-control:focus {
+  outline: none;
+}
+section.newProj .btn-group {
+  justify-content: flex-end;
+}
+section.newProj .new-button {
+  display: inline-block;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #047aed;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+section.newProj .new-button:hover {
+  background-color: #5cb85c;
+  cursor: pointer;
+}
+section.newProj .new-button label {
+  cursor: pointer;
+  width: 100%;
+}
+section.newProj input[type=file] {
+  position: absolute;
+  z-index: -1;
+  font-size: 15px;
+  color: #999999;
+}
+section.newProj .button-wrap {
+  position: relative;
+}
+section.newProj #github {
+  width: 180%;
+}
+section.newProj .form-group.grid {
+  padding: 0;
+}
+section.newProj .form-group.grid .form-group {
+  padding: 0;
+}
+section.newProj .form-group.grid .form-group label {
+  padding: 10px 0;
+}
+
+section.skillAdd .new-button {
+  display: inline-block;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #047aed;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+section.skillAdd .new-button:hover {
+  background-color: #5cb85c;
+  cursor: pointer;
+}
+section.skillAdd .new-button label {
+  cursor: pointer;
+  width: 100%;
+}
+section.skillAdd input[type=file] {
+  position: absolute;
+  z-index: -1;
+  font-size: 15px;
+  color: #999999;
+}
+section.skillAdd .button-wrap {
+  position: relative;
+}
+
+section.editProj form,
+section.editProj h1 {
+  width: 100%;
+}
+section.editProj .editCard {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+section.editProj .form-group.flex {
+  flex-direction: column;
+  align-items: flex-end;
+}
+section.editProj .form-control {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+section.editProj .form-control label {
+  float: left;
+}
+section.editProj input[type=text].form-control,
+section.editProj textarea.form-control {
+  color: #fff;
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+  background-color: #002240;
+}
+section.editProj input[type=text].form-control:focus,
+section.editProj textarea.form-control:focus {
+  outline: none;
+}
+section.editProj .btn-group {
+  justify-content: flex-end;
+}
+
+section.myProjects .card.new {
+  margin: 20px;
+  width: 50%;
+  height: 50%;
+  justify-self: center;
+  box-shadow: none;
+}
+section.myProjects .card-title {
+  padding: 5px 0;
+}
+section.myProjects .card-subtitle {
+  padding: 5px 0 7px 0;
+}
+section.myProjects .card-text {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+section.myProjects .btn-group {
+  padding-top: 10px;
+}
+section.myProjects .btn-group form {
+  display: flex;
+}
+
+/* Tablets and under */
+@media (max-width: 768px) {
+  section.about div.container.flex {
+    flex-direction: column;
+  }
+
+  section.skills .container .skill-bag {
+    flex-direction: column;
+  }
+  section.skills .container .skill-bag .card {
+    width: 100%;
+  }
+
+  section.postHead div.container.flex {
+    flex-direction: column;
+  }
+}
+/* Mobile */
+@media (max-width: 500px) {
+  p {
+    font-size: 15px;
+  }
+
+  .logo {
+    margin-bottom: 0px;
+  }
+
+  .navbar {
+    height: 100%;
+    padding-top: 0px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  section.about {
+    overflow: hidden;
+  }
+
+  .navbar ul {
+    background-color: rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .navbar ul li {
+    padding: 5px 0;
+    text-align: center;
+  }
+
+  section.projects .card-body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  section.more {
+    min-height: 150px;
+  }
+  section.more .aNewMessApears .card {
+    width: 100%;
+  }
+
+  .section-title {
+    padding-top: 0px !important;
+    margin-top: 0px !important;
+    font-size: 3rem !important;
+  }
+
+  .menu {
+    width: 100%;
+    text-align: center;
+  }
+  .menu label {
+    display: inline-block;
+    color: #d1d1d1;
+    background: #047aed;
+    font-style: normal;
+    font-size: 1.2em;
+    margin: 10px 0;
+    border-bottom: 2px solid #002240;
+    width: 80%;
+  }
+  .menu input:checked ~ #items {
+    display: block;
+  }
+  .menu #items {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

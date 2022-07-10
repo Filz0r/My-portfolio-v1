@@ -1,0 +1,27 @@
+.card.loginCard {
+  .form-control {
+    label{
+      float: left
+    }
+    display:flex;
+    flex-direction: column;
+  }
+  .form-control input[type="email"], 
+  .form-control input[type="password"] {
+    &:focus{
+      outline: none;
+    }
+    color: #fff;
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+    background-color: $darkColor;
+  }
+  .btn:hover {
+    background-color: $successColor;
+  }
+  background-color: $darkColor;
+  color: #fff;
+}

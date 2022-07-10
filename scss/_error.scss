@@ -1,0 +1,27 @@
+section.error{
+    height: 600px;
+    max-height: 700px;
+    min-height: 400px;
+    padding: 20px 0;
+    div.card.bg-light{
+        padding: 20px 50px;
+        font-size: 20px;
+        h1{
+            font-size: 50px;
+            padding: 30px 0;
+            text-align: center;
+            width: 100%;
+        }
+        a{
+            color: $mainColor;
+            text-align: center;
+            &:hover{
+                color: $successColor;
+            }
+        }
+        h2,
+        p {
+            text-align: center;
+        }
+    }
+}

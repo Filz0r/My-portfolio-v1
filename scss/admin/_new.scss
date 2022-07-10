@@ -1,0 +1,74 @@
+section.newProj {
+  form,
+  h1 {
+    width: 100%;
+  }
+  .newCard {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .form-control {
+    width: 100%;
+    label {
+      float: left;
+    }
+    display: flex;
+    flex-direction: column;
+  }
+  input[type="text"].form-control,
+  textarea.form-control {
+    &:focus {
+      outline: none;
+    }
+    color: #fff;
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+    background-color: $darkColor;
+  }
+  .btn-group {
+    justify-content: flex-end;
+  }
+  .new-button {
+    &:hover {
+      background-color: $successColor;
+      cursor: pointer;
+    }
+    label{
+      cursor: pointer;
+      width: 100%;
+    }
+    display: inline-block;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: $mainColor;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+  }
+  input[type="file"] {
+    position: absolute;
+    z-index: -1;
+    font-size: 15px;
+    color: rgb(153, 153, 153);
+  }
+  .button-wrap {
+    position: relative;
+  }
+  #github{
+    width: 180%;
+  }
+  .form-group.grid{
+    padding: 0;
+    .form-group{
+      padding: 0;
+      label {
+        padding: 10px 0;
+      }
+    }
+  }
+}

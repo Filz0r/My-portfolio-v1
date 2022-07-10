@@ -1,0 +1,90 @@
+/* Tablets and under */
+@media (max-width: 768px) {
+  section.about div.container.flex {
+    flex-direction: column;
+  }
+  section.skills {
+    .container {
+      .skill-bag {
+        flex-direction: column;
+        .card {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  section.postHead {
+    div.container.flex {
+      flex-direction: column;
+    }
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  p {
+    font-size: 15px;
+  }
+  .logo {
+    margin-bottom: 0px;
+  }
+  .navbar {
+    height: 100%;
+    padding-top: 0px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+  section.about {
+    overflow: hidden;
+  }
+  .navbar ul {
+    //padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    //margin: 10px 0;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    li {
+      padding: 5px 0;
+      text-align: center;
+    }
+  }
+  section.projects .card-body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section.more {
+    min-height: 150px;
+    .aNewMessApears .card {
+      width: 100%;
+    }
+  }
+  .section-title {
+    padding-top: 0px !important;
+    margin-top: 0px !important;
+    font-size: 3rem !important;
+  }
+  .menu {
+    width: 100%;
+    text-align: center;
+    label {
+      display: inline-block;
+      color: $mainBgColor;
+      background: $mainColor;
+      font-style: normal;
+      font-size: 1.2em;
+      margin: 10px 0;
+      border-bottom: 2px solid $darkColor;
+      //border-radius: 3px;
+      width: 80%;
+    }
+    input:checked ~ #items { 
+      display: block;
+    }
+    #items {
+      display: none;
+    }
+  }
+}

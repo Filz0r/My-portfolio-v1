@@ -1,0 +1,122 @@
+section.about {
+  .section-title {
+    font-size: 4rem;
+    text-shadow: 3px 3px 5px #000;
+    padding: 10px;
+    margin: 20px;
+  }
+  .description {
+    text-align: justify;
+    text-shadow: 2px 2px 4px #000;
+    font-size: 16px;
+    padding: 10px;
+    margin: 20px;
+    a{
+      text-shadow: none;
+    }
+  }
+  /*.homeImg {
+    max-width: 500px;
+    min-width: 360px;
+  }*/
+}
+
+section.more {
+  min-height: 500px;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  .moreAbout {
+    width: 100%;
+    .description {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      .contacts {
+        padding: 10px;
+        margin: 10px 0;
+        .cv,
+        #about-mail {
+          a,
+          i {
+            padding: 0 5px;
+            font-size: 1.5rem;
+            &:hover {
+              color: $successColor;
+            }
+          }
+        }
+      }
+
+      h1 {
+        font-size: 4rem;
+        text-align: center;
+        margin: 10px 0;
+      }
+      p {
+        text-align: justify;
+      }
+    }
+
+    .aNewMessApears {
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column wrap;
+      min-height: 200px;
+      max-height: 750px;
+      .card {
+        margin: 0;
+        background-color: $secondaryColor;
+        align-self: stretch;
+        cursor: pointer;
+        display: none;
+        margin: 20px 0;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+        &:hover,
+        &:active {
+          transform: scale(0.98);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+        }
+        p {
+          text-align: justify;
+          color: cornsilk;
+        }
+      }
+    }
+  }
+}
+
+section.skills {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 0 20px;
+    margin: 10px;
+  }
+  p {
+    text-align: justify;
+  }
+  .skill-bag {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .skillBag {
+    align-items: space-evenly;
+    flex-wrap: wrap;
+
+    .skillImg {
+      padding: 20px;
+      min-width: 50px;
+      max-width: 100px;
+    }
+  }
+}

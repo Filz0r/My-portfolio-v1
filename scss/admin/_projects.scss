@@ -1,0 +1,27 @@
+section.myProjects{
+    .card.new{
+        margin: 20px;
+        width: 50%;
+        height: 50%;
+        justify-self: center;
+        box-shadow: none;
+    }
+    .card-title {
+        padding: 5px 0;
+    }
+    .card-subtitle {
+        padding: 5px 0 7px 0;
+    }
+    .card-text {
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 5px 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+    .btn-group {
+        padding-top: 10px;
+        form{
+            display: flex;
+        }
+    }
+}

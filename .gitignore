@@ -1,0 +1,7 @@
+node_modules
+public/favicon.ico
+public/images/
+logs
+public/uploads/
+public/CV-EN.pdf
+views/test.ejs
