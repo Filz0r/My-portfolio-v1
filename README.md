@@ -1,0 +1,2 @@
+# About
+This code represents an old project of mine that has been deprecated because of various issues related to the structure of the same project, while the project works fine I do not recommend that the same is used other than to try to understand the issues it has, I know how to fix them, I just moved this codebase to a different project where I then fixed said issues, because of that this repository is archived.
